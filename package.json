@@ -73,7 +73,7 @@
     }
   },
   "dependencies": {
-    "github-task-manager": "^2.10.2",
+    "github-task-manager": "^2.23.2",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-polyfill": "^6.26.0",
     "bunyan": "^1.8.12",
@@ -94,11 +94,11 @@
     "require-dir": "^0.3.2",
     "safe-json-stringify": "^1.0.4",
     "smoketail": "^0.1.0",
-    "sqs-consumer": "^3.8.0",
+    "sqs-consumer": "^4.0.0",
     "systemjs": "^0.20.19",
     "teamcity-rest-api": "0.0.8",
     "travis-ci": "^2.1.1",
     "uuid": "^3.1.0",
-    "webpack": "^3.8.1"
+    "webpack": "^4.0.0"
   }
 }
