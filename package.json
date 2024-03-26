@@ -80,7 +80,7 @@
     "bunyan-cloudwatch": "^2.2.0",
     "bunyan-format": "^0.2.1",
     "dockerode": "^2.5.3",
-    "express": "^4.16.2",
+    "express": "^4.19.2",
     "express-nunjucks": "^2.2.3",
     "express-sse": "^0.4.1",
     "github": "^13.0.1",
