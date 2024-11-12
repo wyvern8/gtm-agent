@@ -8,7 +8,9 @@
     "commit": "./node_modules/.bin/git-cz",
     "lint": "node ./node_modules/.bin/eslint ./src ./test --fix --ext=.js --ignore-pattern src/agent/static/ --ignore-pattern node_modules/ --ignore-pattern dist/ --ignore-pattern coverage/ --quiet",
     "test": "npm run build && cross-env NODE_ENV=test nyc ./node_modules/.bin/mocha --timeout 10000 --require babel-core/register --require babel-polyfill './dist/test/**/*.spec.js'",
-    "agent": "node ./dist/index.js"
+    "agent": "node ./dist/index.js",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -79,7 +81,7 @@
     "bunyan": "^1.8.13",
     "bunyan-cloudwatch": "^2.2.0",
     "bunyan-format": "^0.2.1",
-    "dockerode": "^3.2.0",
+    "dockerode": "^4.0.0",
     "express": "^4.21.1",
     "express-nunjucks": "^2.2.5",
     "express-sse": "^0.4.1",
@@ -88,7 +90,7 @@
     "highlight.js": "^10.4.1",
     "jenkins": "^0.20.1",
     "nunjucks": "^3.2.4",
-    "proxy-agent": "^5.0.0",
+    "proxy-agent": "^6.3.0",
     "request": "^2.88.2",
     "request-promise-native": "^1.0.9",
     "require-dir": "^0.3.2",
@@ -99,6 +101,8 @@
     "teamcity-rest-api": "0.0.8",
     "travis-ci": "^2.2.0",
     "uuid": "^3.1.0",
-    "webpack": "^5.94.0"
-  }
+    "webpack": "^5.94.0",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
