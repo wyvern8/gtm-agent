@@ -101,7 +101,7 @@
     "teamcity-rest-api": "0.0.8",
     "travis-ci": "^2.2.0",
     "uuid": "^3.1.0",
-    "webpack": "^5.94.0",
+    "webpack": "^5.104.1",
     "@snyk/protect": "latest"
   },
   "snyk": true
